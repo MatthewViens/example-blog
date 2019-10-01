@@ -1,0 +1,70 @@
+@import "header.css";
+@import "navigation.css";
+@import "card.css";
+@import "footer.css";
+
+/**************
+General Styles
+**************/
+
+body {
+  font-weight: 100;
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+/**************
+Layout
+**************/
+
+.container {
+  display: grid;
+  grid-template-areas:
+  "header"
+  "navigation"
+  "content"
+  "footer"
+}
+
+.container > header {
+  grid-area: header;
+}
+
+.container > nav {
+  grid-area: navigation;
+}
+
+.container > main {
+  grid-area: content;
+}
+
+.container > footer {
+  grid-area: footer;
+}
+
+@media (min-width: 600px) {
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "navigation content content content"
+      "footer footer footer footer"
+  }
+  
+  main {
+    margin-left: 1em;
+    max-width: 900px;
+  }
+}

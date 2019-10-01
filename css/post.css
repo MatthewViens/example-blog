@@ -1,0 +1,17 @@
+.author-title {
+  display: flex;
+  align-items: center;
+}
+
+.author-title img {
+  margin-right: 1em;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-details p {
+  margin: 0;
+}

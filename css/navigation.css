@@ -1,0 +1,46 @@
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3em;
+}
+
+nav ul li {
+  padding: .5em;
+}
+
+nav ul li a {
+  color: #02b3e4;
+  text-decoration: none;
+}
+
+nav .button {
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  color: #02b3e4;
+  border: 1px solid #02b3e4;
+}
+
+nav .button:hover {
+  background-color: #02b3e4;
+  color: #ffffff;
+}
+
+@media (min-width: 600px) {
+  nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  nav > ul {
+    grid-template-columns: 1fr;
+  }
+}
