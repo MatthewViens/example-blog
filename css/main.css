@@ -12,9 +12,13 @@ body {
   background-color: #ffffff;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 200;
 }
 
@@ -33,10 +37,10 @@ Layout
 .container {
   display: grid;
   grid-template-areas:
-  "header"
-  "navigation"
-  "content"
-  "footer"
+    "header"
+    "navigation"
+    "content"
+    "footer";
 }
 
 .container > header {
@@ -60,9 +64,9 @@ Layout
     grid-template-areas:
       "header header header header"
       "navigation content content content"
-      "footer footer footer footer"
+      "footer footer footer footer";
   }
-  
+
   main {
     margin-left: 1em;
     max-width: 900px;
